@@ -4,22 +4,25 @@ import { styled, Box, Typography } from '@mui/material';
 const Image = styled(Box)`
     width: 100%;
     background: url(https://as1.ftcdn.net/v2/jpg/05/76/79/34/1000_F_576793436_QFK86xOLKznPDIoUh1Tad3q3Cukc3UxT.jpg) center/108% no-repeat #000;
-    height: 30vh;
+    height: 42vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    // opacity: 0.9;
 `;
 
 const Heading = styled(Typography)`
-    font-size: 50px;
-    color: #FFFFFF;
+    font-size: 53px;
+    color: beige;
     line-height: 1
 `;
 
 const SubHeading = styled(Typography)`
-    font-size: 20px;
-    background: #FFFFFF;
+    font-size: 25px;
+    color: beige;
+    // background: #FFFFFF;
+    // opacity: 0.5;
 `;
 
 const Banner = () => {
