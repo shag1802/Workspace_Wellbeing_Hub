@@ -3,8 +3,8 @@ import { styled, Box, Typography } from '@mui/material';
 
 const Image = styled(Box)`
     width: 100%;
-    background: url(https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg) center/55% repeat-x #000;
-    height: 50vh;
+    background: url(https://as1.ftcdn.net/v2/jpg/05/76/79/34/1000_F_576793436_QFK86xOLKznPDIoUh1Tad3q3Cukc3UxT.jpg) center/108% no-repeat #000;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@ const Image = styled(Box)`
 `;
 
 const Heading = styled(Typography)`
-    font-size: 70px;
+    font-size: 50px;
     color: #FFFFFF;
     line-height: 1
 `;
@@ -26,8 +26,8 @@ const Banner = () => {
     
     return (
         <Image>
-            <Heading>BLOG</Heading>
-            <SubHeading>Code for Interview</SubHeading>
+            <Heading>Workplace Wellbeing Hub</Heading>
+            <SubHeading>Fostering Connection, Support, and Growth</SubHeading>
         </Image>
     )
 }
