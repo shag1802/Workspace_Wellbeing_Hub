@@ -3,7 +3,7 @@ import { Box, styled, Typography, Link } from '@mui/material';
 import { GitHub, Instagram, Email } from '@mui/icons-material';
 
 const Banner = styled(Box)`
-    background-image: url(https://www.wallpapertip.com/wmimgs/23-236943_us-wallpaper-for-website.jpg);
+    background-image: url(https://wallpapers.com/images/featured/creative-0ho3780ng1sfoloq.jpg);
     width: 100%;
     height: 50vh;
     background-position: left 0px bottom 0px;
@@ -27,25 +27,9 @@ const About = () => {
         <Box>
             <Banner/>
             <Wrapper>
-                <Typography variant="h3">Code for Interview</Typography>
-                <Text variant="h5">I'm a Software Engineer based in India. 
-                    I've built websites, desktop applications and corporate software.<br />
-                    If you are interested, you can view some of my favorite projects here
-                    <Box component="span" style={{ marginLeft: 5 }}>
-                        <Link href="https://github.com/kunaltyagi9" color="inherit" target="_blank"><GitHub /></Link>
-                    </Box>
-                </Text>
+                <Typography variant="h3">Workplace Wellbeing Hub</Typography>
                 <Text variant="h5">
-                    Need something built or simply want to have chat? Reach out to me on
-                    <Box component="span" style={{ marginLeft: 5 }}>
-                        <Link href="https://www.instagram.com/codeforinterview/" color="inherit" target="_blank">
-                            <Instagram />
-                        </Link>
-                    </Box>  
-                        or send me an Email 
-                        <Link href="mailto:codeforinterview@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
-                            <Email />
-                        </Link>.
+                Welcome to our Workplace Wellbeing Hub, a space dedicated to fostering a culture of health and happiness. Here, employees can share experiences, access valuable resources, and engage in activities promoting holistic wellbeing. Together, let's prioritize self-care and build a thriving community within
                 </Text>
             </Wrapper>
         </Box>

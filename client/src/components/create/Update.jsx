@@ -15,7 +15,7 @@ const Container = styled(Box)(({ theme }) => ({
 
 const Image = styled('img')({
     width: '100%',
-    height: '50vh',
+    height: '30vh',
     objectFit: 'cover'
 });
 
@@ -59,7 +59,7 @@ const Update = () => {
 
     const { id } = useParams();
 
-    const url = 'https://images.unsplash.com/photo-1543128639-4cb7e6eeef1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwc2V0dXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80';
+    const url = 'https://c4.wallpaperflare.com/wallpaper/294/913/274/colorful-strips-android-5k-4k-wallpaper-preview.jpg';
     
     useEffect(() => {
         const fetchData = async () => {
