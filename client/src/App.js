@@ -11,7 +11,6 @@ import CreatePost from './components/create/CreatePost';
 import DetailView from './components/details/DetailView';
 import Update from './components/create/Update';
 import About from './components/about/About';
-import Contact from './components/contact/Contact';
 import Login from './components/account/Login';
 
 const PrivateRoute = ({ isAuthenticated, ...props }) => {
@@ -54,9 +53,6 @@ function App() {
               <Route path='/about' element={<About />} />
             </Route>
 
-            <Route path='/contact' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='/contact' element={<Contact />} />
-            </Route>
           </Routes>
         </Box>
       </BrowserRouter>
