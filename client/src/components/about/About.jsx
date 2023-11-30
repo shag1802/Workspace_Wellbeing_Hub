@@ -14,6 +14,7 @@ const Wrapper = styled(Box)`
     padding: 20px;
     & > h3, & > h5 {
         margin-top: 50px;
+        color: #c0bfbf;
     }
 `;
 

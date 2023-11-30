@@ -7,23 +7,24 @@ import { categories } from '../../constants/data';
 const StyledTable = styled(Table)`
     border: 1px solid rgba(224, 224, 224, 1);
     // border-radius: 24px;
-    background-color:white;
+    background-color:#fae7ba;
 `;
     
 const StyledButton = styled(Button)`
     margin: 20px;
-    width: 89%;
+    width: 82%;
     background: orange;
     color: black;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
 `;
     
 const StyledLink = styled(Link)`
     font-size : 17px;    
     text-decoration: none;
     color: #236978;
-    // background-color: white;
-    
+    font-weight: bold;
 `;
 
 const Categories = () => {

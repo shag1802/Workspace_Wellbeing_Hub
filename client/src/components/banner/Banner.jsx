@@ -9,18 +9,19 @@ const Image = styled(Box)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // opacity: 0.9;
+    opacity: 0.91;
 `;
 
 const Heading = styled(Typography)`
     font-size: 53px;
-    color: beige;
-    line-height: 1
+    color: white;
+    line-height: 1;
+    // font-weight: bold;
 `;
 
 const SubHeading = styled(Typography)`
     font-size: 25px;
-    color: beige;
+    color: white;
     // background: #FFFFFF;
     // opacity: 0.5;
 `;
