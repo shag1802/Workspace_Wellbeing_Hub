@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Component = styled(AppBar)`
-    background: #FFFFFF;
+    background: beige;
     color: black;
 `;
 
