@@ -9,6 +9,8 @@ import { DataContext } from '../../context/DataProvider';
 
 const Container = styled(Box)(({ theme }) => ({
     margin: '50px 100px',
+    backgroundColor: 'white',
+    height: '760px', // Add this line for white background
     [theme.breakpoints.down('md')]: {
         margin: 0
     }
@@ -24,6 +26,7 @@ const StyledFormControl = styled(FormControl)`
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    background-color:white;
 `;
 
 const InputTextField = styled(InputBase)`
@@ -34,12 +37,14 @@ const InputTextField = styled(InputBase)`
 
 const Textarea = styled(TextareaAutosize)`
     width: 100%;
+    // height: 200%;
     border: none;
     margin-top: 50px;
     font-size: 18px;
     &:focus-visible {
         outline: none;
     }
+    // background-color:white;
 `;
 
 const initialPost = {

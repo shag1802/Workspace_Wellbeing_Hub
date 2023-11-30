@@ -4,6 +4,7 @@ import { styled, Box, Typography } from '@mui/material';
 const Container = styled(Box)`
     border: 1px solid #d3cede;
     border-radius: 10px;
+    background-color: white;
     margin: 10px;
     display: flex;
     align-items: center;

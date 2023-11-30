@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Component = styled(AppBar)`
-    background: beige;
+    background: #363229;
     color: black;
 `;
 
@@ -14,7 +14,7 @@ const Container = styled(Toolbar)`
     justify-content: center;
     & > a {
         padding: 20px;
-        color: #000;
+        color: white;
         text-decoration: none;
     }
 `

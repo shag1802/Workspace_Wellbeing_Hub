@@ -9,11 +9,12 @@ import { DataContext } from '../../context/DataProvider';
 const Component = styled(Box)`
     width: 400px;
     margin: auto;
+    background-color: white;
     box-shadow: 5px 2px 5px 2px rgb(0 0 0/ 0.6);
 `;
 
 const Image = styled('img')({
-    width: 100,
+    width: 120,
     display: 'flex',
     margin: 'auto',
     padding: '50px 0 0'
@@ -80,7 +81,7 @@ const Login = ({ isUserAuthenticated }) => {
     const navigate = useNavigate();
     const { setAccount } = useContext(DataContext);
 
-    const imageURL = 'https://www.sesta.it/wp-content/uploads/2021/03/logo-blog-sesta-trasparente.png';
+    const imageURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nDYRDCp7Z3mG-EHz6M8YaGvx_6I_kpVKzA&usqp=CAU';
 
     useEffect(() => {
         showError(false);
