@@ -4,3 +4,4 @@ server/node_modules/
 # Ignore the inventory directory in the deployment directory
 Deployment/inventory
 
+server/logs/server.log
