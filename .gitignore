@@ -1,0 +1,7 @@
+# Ignore node_modules in the server directory
+server/node_modules/
+
+# Ignore the inventory directory in the deployment directory
+Deployment/inventory
+
+Deployment/inventory
