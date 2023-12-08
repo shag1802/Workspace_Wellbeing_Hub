@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 //components
 import Connection from './database/db.js';
 import Router from './routes/route.js';
-
+import logger from './logger/logging.js';
 
 dotenv.config();
 
@@ -23,6 +23,6 @@ const username = process.env.DB_USERNAME;
 const password = process.env.DB_PASSWORD;
 
 Connection(username, password);
-
+logger.info("Server is running successfully")
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
 export default app;

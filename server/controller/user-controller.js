@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 import Token from '../model/token.js'
 import User from '../model/user.js';
+import logger from '../logger/logging.js';
 
 dotenv.config();
 
@@ -11,6 +12,7 @@ export const singupUser = async (request, response) => {
     try {
         // const salt = await bcrypt.genSalt();
         // const hashedPassword = await bcrypt.hash(request.body.password, salt);
+        logger.info("User SignUp");
         const hashedPassword = await bcrypt.hash(request.body.password, 10);
 
         const user = { username: request.body.username, name: request.body.name, password: hashedPassword }
@@ -26,6 +28,7 @@ export const singupUser = async (request, response) => {
 
 
 export const loginUser = async (request, response) => {
+    logger.info("User Login")
     let user = await User.findOne({ username: request.body.username });
     if (!user) {
         return response.status(400).json({ msg: 'Username does not match' });
@@ -51,6 +54,7 @@ export const loginUser = async (request, response) => {
 }
 
 export const logoutUser = async (request, response) => {
+    logger.info("User Logout")
     const token = request.body.token;
     await Token.deleteOne({ token: token });
 
