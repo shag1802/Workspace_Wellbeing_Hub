@@ -1,9 +1,9 @@
 ---
 - name: Deploy MERN Application
   hosts: all
-  become: true
-  vars:
-    ansible_become_pass: "hello"
+  # become: true
+  # vars:
+  #   ansible_become_pass: "hello"
 
   tasks:
     - name: Pull Client Image
