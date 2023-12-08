@@ -18,10 +18,10 @@
         name: pushkar015/server:latest
         source: pull
 
-    # - name: Pull Mongo Image
-    #   docker_image:
-    #     name: mongo
-    #     source: pull
+    - name: Pull Mongo Image
+      docker_image:
+        name: mongo
+        source: pull
 
     - name: Run Docker Compose
       command: docker compose up 
