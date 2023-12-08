@@ -6,7 +6,7 @@ services:
       - '27017:27017'
 
   backend:
-    build: ./server
+    image: pushkar015/server
     ports:
       - '8000:8000'
     environment:
@@ -14,7 +14,7 @@ services:
       REFRESH_SECRET_KEY: a60327222ffaa884573490fc0574d69f3f5d1925a98479fb4ef184ebc99fab84cbb9edcc41434b58a07b66188a75152916ed7b46b2031afa5b5c0f046cacb726
       DB: mongodb://database:27017/t5
   frontend:
-    build: ./client
+    image: pushkar015/client
     ports:
       - '3000:3000'
     # environment:
