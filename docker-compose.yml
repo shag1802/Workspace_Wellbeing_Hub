@@ -1,12 +1,12 @@
 version: '3'
 services:
   database:
-    image: mongo:latest
+    build: ./server
     ports:
       - '27017:27017'
 
   backend:
-    image: server-img
+    build: ./client
     ports:
       - '8000:8000'
     environment:
