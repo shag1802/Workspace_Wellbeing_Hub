@@ -1,8 +1,8 @@
 ---
 - name: Deploy MERN Application
   hosts: all
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
+  # vars:
+  #   ansible_python_interpreter: /usr/bin/python3
   # become: true
   # vars:
   #   ansible_become_pass: "hello"
