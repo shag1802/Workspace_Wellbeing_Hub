@@ -1,0 +1,26 @@
+---
+- name: Deploy MERN Application
+  hosts: all
+  become: true
+  vars:
+    ansible_become_pass: "hello"
+
+  tasks:
+    - name: Pull Client Image
+      docker_image:
+        name: pushkar015/client:latest
+        source: pull
+
+    - name: Pull Server Image
+      docker_image:
+        name: pushkar015/server:latest
+        source: pull
+
+      
+    - name: Copy Docker Compose file
+      copy:
+        src: docker-compose.yml
+        dest: "{{ playbook_dir }}/docker-compose.yml"
+
+    - name: Run Docker Compose
+      command: docker-compose up -d
