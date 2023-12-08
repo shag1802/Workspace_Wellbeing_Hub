@@ -24,4 +24,4 @@
         source: pull
 
     - name: Run Docker Compose
-      command: docker compose up -d
+      command: docker compose up 
