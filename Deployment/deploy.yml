@@ -22,5 +22,8 @@
         src: ../docker-compose.yml
         dest: ./docker-compose.yml
 
+    - name: Present working diectory
+      command: pwd
+      
     - name: Run Docker Compose
       command: docker compose up 
