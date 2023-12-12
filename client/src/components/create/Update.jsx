@@ -23,15 +23,18 @@ const StyledFormControl = styled(FormControl)`
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    color:pink ;
 `;
 
 const InputTextField = styled(InputBase)`
     flex: 1;
     margin: 0 30px;
     font-size: 25px;
+    color:pink; 
 `;
 
 const StyledTextArea = styled(TextareaAutosize)`
+
     width: 100%;
     border: none;
     margin-top: 50px;

@@ -34,7 +34,7 @@ const Posts = () => {
                             <Post post={post} />
                         </Link>
                     </Grid>
-                )) : <Box style={{color: '878787', margin: '30px 80px', fontSize: 18}}>
+                )) : <Box style={{color: 'red', margin: '30px 80px', fontSize: 18}}>
                         No data is available for selected category
                     </Box>
             }

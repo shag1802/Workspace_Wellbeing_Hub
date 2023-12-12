@@ -12,6 +12,7 @@ import { DataContext } from '../../context/DataProvider';
 import Comments from './comments/Comments';
 
 const Container = styled(Box)(({ theme }) => ({
+    color: 'white',
     margin: '50px 100px',
     [theme.breakpoints.down('md')]: {
         margin: 0
@@ -39,6 +40,7 @@ const DeleteIcon = styled(Delete)`
 `;
 
 const Heading = styled(Typography)`
+    color: white;
     font-size: 38px;
     font-weight: 600;
     text-align: center;

@@ -33,7 +33,7 @@ const initialValue = {
 }
 
 const Comments = ({ post }) => {
-    const url = 'https://static.thenounproject.com/png/12017-200.png'
+    const url = 'https://png.pngtree.com/png-clipart/20191122/original/pngtree-user-icon-isolated-on-abstract-background-png-image_5192004.jpg'
 
     const [comment, setComment] = useState(initialValue);
     const [comments, setComments] = useState([]);

@@ -10,11 +10,13 @@ const Component = styled(Box)`
     margin-top: 30px;
     background: #F5F5F5;
     padding: 10px;
+    color : blue;
 `;
 
 const Container = styled(Box)`
-    display: flex;
+    display: flex;  
     margin-bottom: 5px;
+    color : black;
 `;
 
 const Name = styled(Typography)`
