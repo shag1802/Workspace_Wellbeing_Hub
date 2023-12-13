@@ -15,7 +15,9 @@ pipeline {
         stage('Stopping old containers')
         {
             steps{
-                sh 'docker compose down'
+                script{
+                    sh 'docker compose down'
+                }
                 }
             }
         }
