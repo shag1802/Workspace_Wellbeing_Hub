@@ -12,6 +12,16 @@ pipeline {
                 url:'https://github.com/shag1802/SPE_Final_Project.git'
             }
         }
+        stage('Step : Testing')
+        {
+            steps{
+                dir('client') {
+                    script{
+                        sh 'npm test'
+                    }
+                }
+            }
+        }
         stage('Step 2: Build Client Docker Image')
         {
             steps{
