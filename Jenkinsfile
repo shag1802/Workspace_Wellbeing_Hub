@@ -17,6 +17,7 @@ pipeline {
             steps{
                 dir('server') {
                     script{
+                        sh 'npm install'
                         sh 'npm test'
                     }
                 }
