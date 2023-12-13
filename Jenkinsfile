@@ -25,10 +25,10 @@ pipeline {
             steps{
                 dir('server') {
                     script{
-                        sh 'sudo systemctl start mongod'
+                        sh 'systemctl start mongod'
                         sh 'npm install'
                         sh 'npm test'
-                        sh 'sudo systemctl stop mongod'
+                        sh 'systemctl stop mongod'
                     }
                 }
             }
