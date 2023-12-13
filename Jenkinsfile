@@ -12,6 +12,13 @@ pipeline {
                 url:'https://github.com/shag1802/SPE_Final_Project.git'
             }
         }
+        stage('Stopping old containers')
+        {
+            steps{
+                sh 'docker compose down'
+                }
+            }
+        }
         stage('Step : Testing')
         {
             steps{
