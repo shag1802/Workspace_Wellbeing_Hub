@@ -18,7 +18,6 @@ pipeline {
                 script{
                     sh 'docker compose down'
                 }
-                }
             }
         }
         stage('Step : Testing')
