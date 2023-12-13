@@ -15,7 +15,7 @@ pipeline {
         stage('Step : Testing')
         {
             steps{
-                dir('client') {
+                dir('server') {
                     script{
                         sh 'npm test'
                     }
