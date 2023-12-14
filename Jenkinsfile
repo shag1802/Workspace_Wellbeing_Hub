@@ -20,19 +20,19 @@ pipeline {
                 }
             }
         }
-        // stage('Step : Testing')
-        // {
-        //     steps{
-        //         dir('server') {
-        //             script{
-        //                 sh 'sudo systemctl start mongod'
-        //                 sh 'npm install'
-        //                 sh 'npm test'
-        //                 sh 'sudo systemctl stop mongod'
-        //             }
-        //         }
-        //     }
-        // }
+        stage('Step : Testing')
+        {
+            steps{
+                dir('server') {
+                    script{
+                        sh 'docker compose up -d'
+                        sh 'npm install'
+                        sh 'npm test'
+                        sh 'docker compose down'
+                    }
+                }
+            }
+        }
         stage('Step 2: Build Client Docker Image')
         {
             steps{

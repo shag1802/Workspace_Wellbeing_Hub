@@ -23,6 +23,7 @@ const username = process.env.DB_USERNAME;
 const password = process.env.DB_PASSWORD;
 
 Connection(username, password);
-logger.info("Server is running successfully")
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
+logger.info("Server is running successfully")
+
 export default app;

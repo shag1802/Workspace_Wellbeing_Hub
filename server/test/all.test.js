@@ -9,24 +9,24 @@ describe('Your API Routes', () => {
   let authToken; // Store the authentication token for testing
 
 
-//   const signupData = {
-//     "name": "temp99213",
-//     "username": "temp99213",
-//     "password": "123453",
-//   };
+  const signupData = {
+    "name": "temp",
+    "username": "temp",
+    "password": "temp",
+  };
 
-// describe('POST /signup', () => {
-//     it('should sign up the user and return a success message', (done) => {
-//       chai.request(app)
-//         .post('/signup')
-//         .send(signupData)
-//         .end((err, res) => {
-//           expect(res).to.have.status(200);
-//           expect(res.body).to.have.property('msg', 'Signup successfull'); // Adjust property name
-//           done();
-//         });
-//     });
-//   });
+describe('POST /signup', () => {
+    it('should sign up the user and return a success message', (done) => {
+      chai.request(app)
+        .post('/signup')
+        .send(signupData)
+        .end((err, res) => {
+          expect(res).to.have.status(200);
+          expect(res.body).to.have.property('msg', 'Signup successfull'); // Adjust property name
+          done();
+        });
+    });
+  });
   
   const loginData = {
     "username":"temp",
