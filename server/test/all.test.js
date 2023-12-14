@@ -82,7 +82,7 @@ describe('POST /signup', () => {
 
   // Add more test cases for other routes similarly
 
-//   after(() => {
-//     // Perform any necessary cleanup after tests
-//   });
+  after(() => {
+    process.exit()
+  });
 });

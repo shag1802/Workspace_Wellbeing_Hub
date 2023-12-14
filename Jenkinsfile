@@ -12,7 +12,7 @@ pipeline {
                 url:'https://github.com/shag1802/SPE_Final_Project.git'
             }
         }
-        stage('Stopping old containers')
+        stage('Stage 2: Stopping old containers')
         {
             steps{
                 script{
@@ -20,7 +20,7 @@ pipeline {
                 }
             }
         }
-        stage('Step : Testing')
+        stage('Stage 3: Testing')
         {
             steps{
                 dir('server') {
@@ -33,7 +33,7 @@ pipeline {
                 }
             }
         }
-        stage('Step 2: Build Client Docker Image')
+        stage('Stage 4: Build Client Docker Image')
         {
             steps{
                 dir('client') {
@@ -43,7 +43,7 @@ pipeline {
                 }
             }
         }
-        stage('Stage 3: Build Server Docker Image')
+        stage('Stage 5: Build Server Docker Image')
         {
             steps{
                 dir('server') {
@@ -53,7 +53,7 @@ pipeline {
                 }
             }
         }
-        stage('Stage 4: Push docker image to hub')
+        stage('Stage 6: Push docker image to hub')
         {
             steps{
                     script{
@@ -64,7 +64,7 @@ pipeline {
                     }
             }
         }
-        stage('Stage 5: Clean docker images')
+        stage('Stage 7: Clean docker images')
         {
             steps{
                 script{
@@ -73,7 +73,7 @@ pipeline {
                 }
             }
         }
-        stage('Stage 6: Ansible Deployment')
+        stage('Stage 8: Ansible Deployment')
         {
             steps{
                     ansiblePlaybook becomeUser: null,
