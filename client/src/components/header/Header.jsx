@@ -30,7 +30,7 @@ const Header = () => {
     return (
         <Component>
             <Container>
-                <Link to='/'>HOME</Link>
+                <Link to='/'>HOME TAB</Link>
                 <Link to='/about'>ABOUT</Link>
                 <Link to='/account'>LOGOUT</Link>
             </Container>
